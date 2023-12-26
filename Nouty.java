@@ -3,13 +3,13 @@
 // import java.util.Objects;
 
 public class Nouty {
-    int id_num;
+    String id_num;
     String name;//название фирмы призводителя
-    int memory;//память 
+    String memory;//память 
     String op_sys;//опрац сист
     String color;
 
-    public Nouty(int id_num, String name, int memory, String op_sys, String color) {
+    public Nouty(String id_num, String name, String memory, String op_sys, String color) {
         this.id_num = id_num;
         this.name = name;
         this.memory = memory;
@@ -32,7 +32,7 @@ public class Nouty {
                 '}';
     }
      
-public int getId() {
+public String getId() {
     return id_num;
 }
 
@@ -40,7 +40,7 @@ public String getName() {
     return name;
 }
 
-public int getMemory() {
+public String getMemory() {
     return memory;
 }
 
