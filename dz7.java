@@ -6,7 +6,10 @@ import java.util.Scanner;
 
 public class dz7 {
 
- public static void main(String[] args) {
+ /**
+ * @param args
+ */
+public static void main(String[] args) {
         Nouty nout1 = new Nouty();
         nout1.id_num = "1";
         nout1.name = "Asus";
@@ -41,7 +44,6 @@ public class dz7 {
         laptops.add(nout3);
         laptops.add(nout4);
 
-        //System.out.println(notebooks);
         generateFiltred(laptops);
         
     }
@@ -74,17 +76,18 @@ public class dz7 {
                     System.out.println("Введите цвет корпуса: ");
                     params.put("color", scanner.next());
                     break;
-                default:
+            default:
                     search = false;
                     return;
-                    
+        
             }
-            
+        
             System.out.println(params);
             printRezult(laptops, params);
         }
         
     }
+
 
 
 public static void printRezult(Set<Nouty> laptops, Map <String, String> params){
@@ -96,43 +99,13 @@ public static void printRezult(Set<Nouty> laptops, Map <String, String> params){
                 nout.getOp_sys().equals(params.get("op_sys")) &&
                 nout.getColor().equals(params.get("color"))); {
               
-                System.out.println(nout);
-            }
+                    System.out.println(nout);
+                    };
             
         }
-        4
-    }
-    
-}
-
-
-
-
-// public static void search (Set<Nouty> notebooks){
-//         Nouty params = new Nouty();
-//         params.id_num = null;
-//         System.out.println("Введите марку производителя: ");
-//         Scanner sc = new Scanner(System.in, "");
-//         params.name = sc.next();
-//         System.out.println("Введите обьем памяти: ");
-//         params.memory = sc.next();
-//         System.out.printf("Введите нужную операционную систему: ");
-//         params.op_sys = sc.next();
-//         System.out.printf("Введите интересующий цвет: ");
-//         params.color = sc.next();
-
-//         public filter(Set<Nouty> notebooks, Nouty params);{
-//             for(Nouty notebooks: notebooks, params()){
-//                 if (params in notebooks){
-//                 return true
-
-//             System.out.println(key)
-//                         }
-//         }
-            
         
+    }
+   
+};
 
-    
-// }
-// }
 
